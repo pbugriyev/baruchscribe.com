@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <rect id="plate" width="1024" height="1024" fill="#0E1B3D"/>
+  <g id="mark" transform="translate(42 -18)" fill="#FBF8F3">
+    <path fill-rule="evenodd" d="
+      M 320 100
+      C 284 136 252 164 236 186
+      L 214 202
+      L 250 218
+      L 208 234
+      L 250 250
+      L 202 268
+      L 250 284
+      L 198 302
+      L 250 320
+      C 242 348 246 390 246 430
+      L 246 792
+      C 250 836 276 888 320 956
+      C 364 888 390 836 394 792
+      L 394 250
+      C 394 176 364 128 320 100
+      Z
+      M 314 930
+      L 326 930
+      L 324 892
+      L 316 892
+      Z
+      M 320 876
+      m -14 0
+      a 14 14 0 1 0 28 0
+      a 14 14 0 1 0 -28 0
+    "/>
+    <path d="M 280 232 L 420 232 A 156 112 0 0 1 420 456 L 280 456" fill="none" stroke="#FBF8F3" stroke-width="108" stroke-linecap="butt"/>
+    <path d="M 280 492 L 448 492 A 236 148 0 0 1 448 788 L 280 788" fill="none" stroke="#FBF8F3" stroke-width="116" stroke-linecap="butt"/>
+  </g>
+</svg>
