@@ -12,7 +12,7 @@ function Header() {
           <span className="font-serif text-lg tracking-tight">Baruch Scribe</span>
         </a>
         <nav aria-label="Main" className="hidden items-center gap-8 text-sm md:flex">
-          {[["Features", "#features"], ["How it works", "#how"], ["Why Baruch", "#why"]].map(([l, h]) => (
+          {[["Features", "#features"], ["How it works", "#how"], ["Why Baruch", "#why"], ["Founding 12", "#founding"]].map(([l, h]) => (
             <a key={h} href={h} className={`text-[#3f5a72] ${tr} hover:text-[#263d52]`}>{l}</a>))}
         </nav>
         <a href={DL} className={`inline-flex shrink-0 items-center gap-2 rounded-lg bg-[#324E66] px-3.5 py-2 text-sm font-medium text-white ${tr} hover:bg-[#263d52]`}>
@@ -20,7 +20,7 @@ function Header() {
         </a>
       </div>
       <nav aria-label="Sections" className="flex justify-center gap-6 border-t border-[#9DB6C9]/40 py-2 text-xs md:hidden">
-        {[["Features", "#features"], ["How it works", "#how"], ["Why Baruch", "#why"]].map(([l, h]) => (
+        {[["Features", "#features"], ["How it works", "#how"], ["Why Baruch", "#why"], ["Founding 12", "#founding"]].map(([l, h]) => (
           <a key={h} href={h} className={`text-[#3f5a72] ${tr} hover:text-[#263d52]`}>{l}</a>))}
       </nav>
     </header>
@@ -181,6 +181,38 @@ export default function Home() {
           </div>
         </section>
 
+
+        <section id="founding" className="border-y border-[#9DB6C9]/40 bg-[#E8EFF4]">
+          <div className="mx-auto grid max-w-6xl gap-12 px-5 py-24 sm:px-8 lg:grid-cols-2">
+            <div>
+              <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#4d6982]">Founding 12</p>
+              <h2 className="mt-3 font-serif text-3xl tracking-tight text-[#324E66] sm:text-5xl">12 testers. 14 free days.</h2>
+              <p className="mt-6 leading-relaxed">We're inviting twelve pastors and biblical counselors to use Baruch Scribe in real sessions and help shape it. Founding testers get fourteen days free and a direct line to the people building it.</p>
+              <ul className="mt-6 space-y-2 text-sm">
+                <li>• Android phone required for now</li>
+                <li>• Honest feedback after a few sessions</li>
+                <li>• Your notes stay on your device or in your own Drive</li>
+              </ul>
+              <p className="mt-6 inline-flex rounded-lg border border-[#9DB6C9] bg-white px-3 py-1 text-xs font-medium text-[#324E66]">Only twelve spots. We'll reply to each request personally.</p>
+            </div>
+            <form action="https://formsubmit.co/p.bugriyev@gmail.com" method="POST" className="space-y-4 rounded-lg border border-[#9DB6C9]/40 bg-white p-6 sm:p-8">
+              <input type="hidden" name="_subject" value="Founding 12 sign-up" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="https://baruchscribe.com/thanks/" />
+              <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden />
+              <div><label htmlFor="name" className="block text-sm font-medium text-[#324E66]">Name</label><input id="name" name="name" required autoComplete="name" className="mt-1.5 w-full rounded-lg border border-[#9DB6C9] bg-white px-3 py-2.5 text-sm text-[#324E66] transition-colors duration-200 focus:border-[#324E66] focus:outline-none focus:ring-2 focus:ring-[#9DB6C9]/50" /></div>
+              <div><label htmlFor="email" className="block text-sm font-medium text-[#324E66]">Email</label><input id="email" name="email" type="email" required autoComplete="email" className="mt-1.5 w-full rounded-lg border border-[#9DB6C9] bg-white px-3 py-2.5 text-sm text-[#324E66] transition-colors duration-200 focus:border-[#324E66] focus:outline-none focus:ring-2 focus:ring-[#9DB6C9]/50" /></div>
+              <div><label htmlFor="church" className="block text-sm font-medium text-[#324E66]">Church</label><input id="church" name="church" required className="mt-1.5 w-full rounded-lg border border-[#9DB6C9] bg-white px-3 py-2.5 text-sm text-[#324E66] transition-colors duration-200 focus:border-[#324E66] focus:outline-none focus:ring-2 focus:ring-[#9DB6C9]/50" /></div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div><label htmlFor="role" className="block text-sm font-medium text-[#324E66]">Role</label><select id="role" name="role" required defaultValue="" className="mt-1.5 w-full rounded-lg border border-[#9DB6C9] bg-white px-3 py-2.5 text-sm text-[#324E66] transition-colors duration-200 focus:border-[#324E66] focus:outline-none focus:ring-2 focus:ring-[#9DB6C9]/50"><option value="" disabled>Choose one</option><option>Pastor</option><option>Biblical counselor</option><option>Other</option></select></div>
+                <fieldset><legend className="block text-sm font-medium text-[#324E66]">Android phone?</legend><div className="mt-3 flex gap-5 text-sm"><label className="flex items-center gap-2"><input type="radio" name="android" value="Yes" required className="accent-[#324E66]" />Yes</label><label className="flex items-center gap-2"><input type="radio" name="android" value="No" className="accent-[#324E66]" />No</label></div></fieldset>
+              </div>
+              <div><label htmlFor="why" className="block text-sm font-medium text-[#324E66]">Why do you want to join?</label><textarea id="why" name="why" rows={3} maxLength={500} required className="mt-1.5 w-full rounded-lg border border-[#9DB6C9] bg-white px-3 py-2.5 text-sm text-[#324E66] transition-colors duration-200 focus:border-[#324E66] focus:outline-none focus:ring-2 focus:ring-[#9DB6C9]/50" /></div>
+              <button type="submit" className="w-full rounded-lg bg-[#324E66] px-5 py-3 text-sm font-medium text-white transition-colors duration-200 hover:bg-[#263d52]">Request a spot</button>
+              <p className="text-xs text-[#4d6982]">Your answers go only to the Baruch Scribe team by email. No tracking, no mailing list.</p>
+            </form>
+          </div>
+        </section>
         <section className="mx-auto grid max-w-6xl gap-4 px-5 py-24 sm:px-8 md:grid-cols-2">
           <div className="rounded-lg border border-[#9DB6C9]/40 bg-white p-8">
             <h2 className="font-serif text-3xl tracking-tight text-[#324E66]">The sufficiency of Scripture</h2>
@@ -206,7 +238,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-5 py-10 text-sm sm:flex-row sm:px-8">
           <p>© 2026 Baruch Scribe</p>
           <nav className="flex gap-6">
-            {[["Download", DL], ["Privacy", "/privacy.html"], ["Features", "#features"]].map(([l, h]) => <a key={l} href={h} className={`${tr} hover:text-[#263d52]`}>{l}</a>)}
+            {[["Download", DL], ["Privacy", "/privacy.html"], ["Features", "#features"], ["Founding 12", "#founding"]].map(([l, h]) => <a key={l} href={h} className={`${tr} hover:text-[#263d52]`}>{l}</a>)}
           </nav>
         </div>
       </footer>
