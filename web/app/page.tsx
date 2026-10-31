@@ -30,7 +30,7 @@ function Header() {
 function Line({ who, text }: { who: "You" | "Counselee"; text: string }) {
   return (
     <div className="flex gap-2 text-[13px] leading-snug">
-      <span className={`w-[70px] shrink-0 text-[11px] font-medium uppercase tracking-wider ${who === "You" ? "text-[#324E66]" : "text-[#324E66]0"}`}>{who}</span>
+      <span className={`w-[70px] shrink-0 text-[11px] font-medium uppercase tracking-wider ${who === "You" ? "text-[#324E66]" : "text-[#4d6982]"}`}>{who}</span>
       <p className="text-[#324E66]">{text}</p>
     </div>
   );
@@ -42,9 +42,9 @@ function Phone() {
       <div aria-hidden className="absolute -inset-16 -z-10 rounded-full bg-[#9DB6C9]/35 blur-3xl" />
       <div className="rounded-[2.5rem] border border-[#9DB6C9]/40 bg-white p-3">
         <div className="overflow-hidden rounded-[2rem] border border-[#9DB6C9]/40 bg-[#F7F4F3]">
-          <div className="flex items-center justify-between px-6 pt-4 text-[11px] text-[#324E66]0"><span>9:41</span><span className="h-1.5 w-16 rounded-full bg-[#E8EFF4]" /><span>●●●</span></div>
+          <div className="flex items-center justify-between px-6 pt-4 text-[11px] text-[#4d6982]"><span>9:41</span><span className="h-1.5 w-16 rounded-full bg-[#E8EFF4]" /><span>●●●</span></div>
           <div className="flex items-center justify-between border-b border-[#9DB6C9]/40 px-5 py-3">
-            <div><p className="text-sm font-medium text-[#324E66]">Session 3 · Anna</p><p className="text-[11px] text-[#324E66]0">Grief · 24:12</p></div>
+            <div><p className="text-sm font-medium text-[#324E66]">Session 3 · Anna</p><p className="text-[11px] text-[#4d6982]">Grief · 24:12</p></div>
             <span className="inline-flex items-center gap-1.5 rounded-lg border border-[#324E66]/30 bg-[#324E66]/10 px-2 py-1 text-[11px] text-[#324E66]"><span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#324E66]" />Listening</span>
           </div>
           <div className="space-y-3 px-5 py-4">
@@ -95,7 +95,7 @@ function CueTimeline() {
       {cues.map(([I, t, c], i) => (
         <li key={t} className="relative">
           <span className={`absolute -left-[26px] top-1 h-2.5 w-2.5 rounded-full border ${i === 2 ? "border-[#324E66] bg-[#324E66]" : "border-[#9DB6C9] bg-white"}`} />
-          <p className="flex items-center gap-2 text-[11px] uppercase tracking-wider text-[#324E66]0"><I className="h-3.5 w-3.5" />{t}</p>
+          <p className="flex items-center gap-2 text-[11px] uppercase tracking-wider text-[#4d6982]"><I className="h-3.5 w-3.5" />{t}</p>
           <p className="mt-0.5 text-sm text-[#324E66]">{c}</p>
         </li>))}
     </ol>
@@ -111,7 +111,7 @@ function Skills() {
           <div className="flex justify-between text-xs"><span className={n === "Opening the Word" ? "text-[#324E66]" : "text-[#324E66]"}>{n}</span><span>{v}%</span></div>
           <div className="mt-1 h-1.5 rounded-full bg-[#E8EFF4]"><div className={`h-full rounded-full ${n === "Opening the Word" ? "bg-[#324E66]" : "bg-[#9DB6C9]"}`} style={{ width: `${v}%` }} /></div>
         </div>))}
-      <p className="pt-2 text-xs text-[#324E66]0">Focus next time: <span className="text-[#324E66]">let a passage speak before you answer.</span></p>
+      <p className="pt-2 text-xs text-[#4d6982]">Focus next time: <span className="text-[#324E66]">let a passage speak before you answer.</span></p>
     </div>
   );
 }
@@ -130,7 +130,7 @@ function Web() {
 
 const Title = ({ k, t, id }: { k: string; t: string; id?: string }) => (
   <div id={id} className="mx-auto max-w-2xl text-center">
-    <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#324E66]0">{k}</p>
+    <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#4d6982]">{k}</p>
     <h2 className="mt-3 font-serif text-3xl tracking-tight text-[#324E66] sm:text-5xl">{t}</h2>
   </div>
 );
