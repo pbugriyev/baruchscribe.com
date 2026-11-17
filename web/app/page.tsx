@@ -161,7 +161,7 @@ export default function Home() {
           </div>
           <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <Card icon={ClipboardList} title="Intake to first-session brief" body="Import a filled intake form, or talk it through together in the first session." />
-            <Card icon={HardDrive} title="Notes stay with you" body="On your device, or in your own Google Drive or OneDrive. Nowhere else." />
+            <Card icon={HardDrive} title="Your notes, kept where you choose" body="Notes are stored on your device or in your own Google Drive or OneDrive. To write down live speech in the browser, audio is sent to AssemblyAI. We don't keep your notes." />
             <Card icon={HandHeart} title="Prayer at the start and end" body="A gentle prompt to open in prayer, and to close with the homework in view." />
             <Card icon={Languages} title="Four languages" body="English, Русский, Español and 한국어, from transcript to case report." />
             <Card icon={MicOff} title="Confession mode" body="One tap turns the microphone off. Nothing after that moment is transcribed." />
@@ -191,7 +191,7 @@ export default function Home() {
               <ul className="mt-6 space-y-2 text-sm">
                 <li>• Android phone required for now</li>
                 <li>• Honest feedback after a few sessions</li>
-                <li>• Your notes stay on your device or in your own Drive</li>
+                <li>• Your notes are stored on your device or in your own Drive</li>
               </ul>
               <p className="mt-6 inline-flex rounded-lg border border-[#9DB6C9] bg-white px-3 py-1 text-xs font-medium text-[#324E66]">Only twelve spots. We'll reply to each request personally.</p>
             </div>
@@ -221,7 +221,7 @@ export default function Home() {
           </div>
           <div className="rounded-lg border border-[#9DB6C9]/40 bg-white p-8">
             <h2 className="font-serif text-3xl tracking-tight text-[#324E66]">Private by design</h2>
-            <p className="mt-4 leading-relaxed">Your notes stay on your phone, or in your own Google Drive or OneDrive. There are no ads and no analytics, and the app never sends anything on its own.</p>
+            <p className="mt-4 leading-relaxed">Your notes are stored on your phone, or in your own Google Drive or OneDrive. The phone can transcribe on the phone. In the browser, live speech is sent to AssemblyAI to be written down, and Ask Baruch questions go through our server to an AI service only when you tap Send. No ads, no analytics.</p>
             <a href="/privacy.html" className={`mt-6 inline-block text-sm text-[#324E66] ${tr} hover:text-[#263d52] hover:underline`}>Read how privacy works →</a>
           </div>
         </section>
