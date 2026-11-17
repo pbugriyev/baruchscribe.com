@@ -1,3 +1,22 @@
+import type { Metadata } from "next";
+
+const HOME_TITLE = "Baruch Scribe — a quiet companion for biblical counselors";
+const HOME_DESCRIPTION = "Baruch Scribe follows a biblical counseling session quietly, keeps a faithful record, and offers gentle next questions, so your attention can stay on your counselee.";
+export const metadata: Metadata = {
+  title: HOME_TITLE,
+  description: HOME_DESCRIPTION,
+  alternates: { canonical: "https://baruchscribe.com/" },
+  openGraph: {
+    type: "website",
+    siteName: "Baruch Scribe",
+    locale: "en_US",
+    url: "https://baruchscribe.com/",
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+    images: [{ url: "https://baruchscribe.com/assets/og-image.png", width: 1200, height: 630, alt: HOME_TITLE }],
+  },
+  twitter: { card: "summary_large_image", title: HOME_TITLE, description: HOME_DESCRIPTION, images: ["https://baruchscribe.com/assets/og-image.png"] },
+};
 import { Headphones, Ear, MessageCircleQuestion, Timer, BookOpen, ClipboardList, HardDrive, HandHeart, Languages, MicOff, ShieldCheck, ArrowRight, Download, Sparkles } from "lucide-react";
 
 const DL = "/download/";
