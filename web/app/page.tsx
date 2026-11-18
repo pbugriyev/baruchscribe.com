@@ -182,7 +182,7 @@ export default function Home() {
             <Card icon={ClipboardList} title="Intake to first-session brief" body="Import a filled intake form, or talk it through together in the first session." />
             <Card icon={HardDrive} title="Your notes, kept where you choose" body="Notes are stored on your device or in your own Google Drive or OneDrive. To write down live speech in the browser, audio is sent to AssemblyAI. We don't keep your notes." />
             <Card icon={HandHeart} title="Prayer at the start and end" body="A gentle prompt to open in prayer, and to close with the homework in view." />
-            <Card icon={Languages} title="Four languages" body="English, Русский, Español and 한국어, from transcript to case report." />
+            <Card icon={Languages} title="Languages" body="English is available now, from transcript to case report. Russian, Spanish and Korean are coming." />
             <Card icon={MicOff} title="Confession mode" body="One tap turns the microphone off. Nothing after that moment is transcribed." />
             <Card icon={ShieldCheck} title="Sufficient Scripture" body="Biblical categories only. It respects medical care and common grace, and never replaces them." />
           </div>
